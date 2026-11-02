@@ -110,8 +110,9 @@ func containsAll(value string, parts ...string) bool {
 }
 
 func TestStudyParse(t *testing.T) {
+	var parsedCourseID string
 	server := httptest.NewServer(http.HandlerFunc(func(writer http.ResponseWriter, request *http.Request) {
-		fmt.Fprint(writer, `{"choices":[{"finish_reason":"stop","message":{"content":"[{\"id\":\"33333333-3333-4333-8333-333333333333\",\"courseId\":\"44444444-4444-4444-8444-444444444444\",\"title\":\" 第一讲 \",\"chapter\":\" 第一章 \",\"endsAt\":\"2026-10-23T10:00:00+08:00\"}]"}}]}`)
+		fmt.Fprintf(writer, `{"choices":[{"finish_reason":"stop","message":{"content":"[{\"id\":\"33333333-3333-4333-8333-333333333333\",\"courseId\":\"%s\",\"title\":\" 第一讲 \",\"chapter\":\" 第一章 \",\"endsAt\":\"2026-10-23T10:00:00+08:00\"}]"}}]}`, parsedCourseID)
 	}))
 	defer server.Close()
 	dataRoot := t.TempDir()
@@ -129,10 +130,16 @@ func TestStudyParse(t *testing.T) {
 	if _, errReply := f.call("db:bootstrap", nil); errReply != nil {
 		t.Fatalf("bootstrap failed: %+v", errReply)
 	}
-	if _, errReply := f.call("course:create", map[string]any{"name": "解析课"}); errReply != nil {
-		t.Fatalf("course:create failed: %+v", errReply)
+	courseRaw, courseErr := f.call("course:create", map[string]any{"name": "解析课"})
+	if courseErr != nil {
+		t.Fatalf("course:create failed: %+v", courseErr)
 	}
-	raw, errReply := f.call("study:parse", map[string]any{"text": "周一一二节 第一讲", "timezone": "Asia/Shanghai"})
+	var created map[string]any
+	if err := json.Unmarshal(courseRaw, &created); err != nil {
+		t.Fatal(err)
+	}
+	parsedCourseID, _ = created["id"].(string)
+	raw, errReply := f.call("study:parse", map[string]any{"text": "2026年10月23日 解析课 第一讲 第一章 第1-2节；第1节08:00-08:45，第2节09:15-10:00", "timezone": "Asia/Shanghai"})
 	if errReply != nil {
 		t.Fatalf("study:parse failed: %+v", errReply)
 	}

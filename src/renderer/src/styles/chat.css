@@ -160,6 +160,11 @@
  padding: 16px;
  border-radius: 12px;
 }
+.chat-bubble .katex-display {
+ max-width: 100%;
+ overflow-x: auto;
+ overflow-y: hidden;
+}
 .chat-bubble img {
  max-width: 100%;
 }

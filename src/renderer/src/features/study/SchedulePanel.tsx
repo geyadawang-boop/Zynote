@@ -133,7 +133,7 @@ export function ScheduleMenu(props: ScheduleProps) {
     <Modal title="识别课表" close={() => !busy && setImporting(false)}>
      <div className="study-import">
       <p className="study-menu__hint">
-       请粘贴包含日期、结束时间和章节的课表；课程名称需要与已有课程匹配。缺少任一信息时不会猜测。
+       请粘贴包含明确日期、结束时间和章节的课表，课程名称须匹配已有课程。若只有星期、节次或单双周，请补充学期起始日期、周次规则和作息时刻表；节次不等于课次，也不等于几点。此入口识别文本，不直接读取图片。识别后请核对再保存。
       </p>
       <StudyField label="课表文本">
        <TextArea

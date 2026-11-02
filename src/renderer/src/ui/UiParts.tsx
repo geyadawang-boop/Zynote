@@ -2,6 +2,9 @@ import {Button, Input, Modal as HeroModal} from '@heroui/react'
 import {useEffect, useState, type ReactNode} from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import {remarkChatMath} from '@shared/math-markdown'
 import type {LibraryFile} from '@shared/types'
 import {SelectField} from './SelectField'
 import {StudyIcon} from './StudyIcon'
@@ -205,7 +208,11 @@ export function FilePicker({
 }
 export function Markdown({text}: Readonly<{text: string}>) {
  return (
-  <ReactMarkdown remarkPlugins={[remarkGfm]} components={{a: MarkdownLink}}>
+  <ReactMarkdown
+   remarkPlugins={[remarkGfm, remarkChatMath, remarkMath]}
+   rehypePlugins={[[rehypeKatex, {strict: 'ignore', output: 'html', trust: false}]]}
+   components={{a: MarkdownLink}}
+  >
    {text}
   </ReactMarkdown>
  )
