@@ -62,12 +62,21 @@ pnpm build
 
 见 `docs/RELEASE.md`；Windows IM 迁移见 `docs/WINDOWS_IM_HANDOFF.md`。
 
-## 贡献者
+## 贡献度
 
-- [@geyadawang-boop](https://github.com/geyadawang-boop)：BiliSum 作者，本仓库维护者
-- mikudeshuo：meiji-listening-guide 作者
-- [@EveSunMaple](https://github.com/EveSunMaple)（SunMaple）：Zynote 重构与上游维护者，拥有本仓库写权限
-- yslasd、zhongmian：PR 贡献
+按功能资产口径核算（14 项资产，每项 = 需求 0.35 + 契约 0.25 + 实现 0.40）：
+
+![贡献占比](docs/contrib-chart.svg)
+
+| 贡献者 | 角色 | 综合占比 |
+| --- | --- | ---: |
+| [@EveSunMaple](https://github.com/EveSunMaple) | 重构者：Go / Rust 后端、协议契约、发布 | 34.9% |
+| [@geyadawang-boop](https://github.com/geyadawang-boop) | BiliSum 作者、本仓库维护者 | 33.0% |
+| [@mikudeshuo](https://github.com/mikudeshuo) | meiji-listening-guide 0.1.85 作者 | 23.2% |
+| [@zhongmian085182019](https://github.com/zhongmian085182019) | 课表截图导入、教材 PDF 批注 | 6.2% |
+| [@yslasd](https://github.com/yslasd) | 研究模块：引用核对、检索渠道 | 2.7% |
+
+口径、14 项资产明细与敏感性分析见 [CONTRIBUTORS.md](CONTRIBUTORS.md)；可视化报告 [contributors-report.html](docs/contributors-report.html)（下载后用浏览器打开）。分项四舍五入，尾差 ±0.1。
 
 ## 许可
 

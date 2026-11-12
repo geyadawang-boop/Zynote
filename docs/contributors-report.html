@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zynote 贡献值重算报告</title>
+<style>
+:root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:48px 28px 72px}
+h1{font-size:34px;line-height:1.3;margin:0 0 8px;letter-spacing:-.5px}
+.sub{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:32px 0 8px}
+.kpi{background:#fff;border:1px solid var(--line);border-top:3px solid var(--c);border-radius:12px;padding:14px}
+.kpi-name{font-size:12px;color:var(--muted);word-break:break-all}
+.kpi-val{font-size:26px;font-weight:800;color:var(--c);line-height:1.2;margin:6px 0 2px}
+.kpi-val span{font-size:14px;font-weight:600}
+.kpi-role{font-size:11px;color:#94a3b8;line-height:1.4}
+section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin:18px 0}
+h2{font-size:17px;margin:0 0 16px;padding-left:10px;border-left:4px solid #6366f1}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:9px 8px;border-bottom:1px solid #f1f5f9;text-align:left}
+th{font-size:12px;color:var(--muted);font-weight:600;background:#fafbfc}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+td.b{font-weight:700}
+td i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:8px}
+td.ev{color:var(--muted);font-size:12px;line-height:1.5}
+.note{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px 18px;font-size:13px;color:#78350f}
+ul{margin:8px 0 0;padding-left:20px} li{margin:5px 0}
+code{background:#f1f5f9;padding:1px 5px;border-radius:4px;font-size:12px}
+.foot{color:#94a3b8;font-size:12px;text-align:center;margin-top:28px}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+<h1>meiji × BiliSum → Zynote 贡献值重算</h1>
+<div class="sub">14 个功能资产 · 需求 / 契约 / 实现三段分解 · 快照 <code>EveSunMaple/Zynote@8773dbb</code> · 2026-11-13</div>
+<div class="grid"><div class="kpi" style="--c:#6366f1"><div class="kpi-name">EveSunMaple</div>
+<div class="kpi-val">34.9<span>%</span></div><div class="kpi-role">重构者 · 上游维护</div></div><div class="kpi" style="--c:#0ea5e9"><div class="kpi-name">geyadawang-boop</div>
+<div class="kpi-val">33.0<span>%</span></div><div class="kpi-role">BiliSum 作者 · 本仓库维护</div></div><div class="kpi" style="--c:#10b981"><div class="kpi-name">mikudeshuo</div>
+<div class="kpi-val">23.2<span>%</span></div><div class="kpi-role">meiji 0.1.85 作者</div></div><div class="kpi" style="--c:#f59e0b"><div class="kpi-name">zhongmian085182019</div>
+<div class="kpi-val">6.2<span>%</span></div><div class="kpi-role">课表 / 教材 PDF</div></div><div class="kpi" style="--c:#ef4444"><div class="kpi-name">yslasd</div>
+<div class="kpi-val">2.7<span>%</span></div><div class="kpi-role">研究模块 PR</div></div></div>
+
+<section><h2>综合贡献</h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="100%" role="img" aria-label="综合贡献占比"><rect width="720" height="300" fill="#ffffff"/>
+  <text x="0" y="48" font-size="14" fill="#334155">EveSunMaple</text>
+  <rect x="180" y="30" width="520" height="24" rx="6" fill="#eef2f7"/>
+  <rect x="180" y="30" width="453.7" height="24" rx="6" fill="#6366f1"/>
+  <text x="643.7" y="47" font-size="14" font-weight="700" fill="#6366f1">34.9%</text>
+  <text x="0" y="100" font-size="14" fill="#334155">geyadawang-boop</text>
+  <rect x="180" y="82" width="520" height="24" rx="6" fill="#eef2f7"/>
+  <rect x="180" y="82" width="429.0" height="24" rx="6" fill="#0ea5e9"/>
+  <text x="619.0" y="99" font-size="14" font-weight="700" fill="#0ea5e9">33.0%</text>
+  <text x="0" y="152" font-size="14" fill="#334155">mikudeshuo</text>
+  <rect x="180" y="134" width="520" height="24" rx="6" fill="#eef2f7"/>
+  <rect x="180" y="134" width="301.6" height="24" rx="6" fill="#10b981"/>
+  <text x="491.6" y="151" font-size="14" font-weight="700" fill="#10b981">23.2%</text>
+  <text x="0" y="204" font-size="14" fill="#334155">zhongmian085182019</text>
+  <rect x="180" y="186" width="520" height="24" rx="6" fill="#eef2f7"/>
+  <rect x="180" y="186" width="80.6" height="24" rx="6" fill="#f59e0b"/>
+  <text x="270.6" y="203" font-size="14" font-weight="700" fill="#f59e0b">6.2%</text>
+  <text x="0" y="256" font-size="14" fill="#334155">yslasd</text>
+  <rect x="180" y="238" width="520" height="24" rx="6" fill="#eef2f7"/>
+  <rect x="180" y="238" width="35.1" height="24" rx="6" fill="#ef4444"/>
+  <text x="225.1" y="255" font-size="14" font-weight="700" fill="#ef4444">2.7%</text></svg>
+<table><thead><tr><th>贡献者</th><th class="n">需求 0.35</th><th class="n">契约 0.25</th><th class="n">实现 0.40</th><th class="n">综合</th><th class="n">占比</th></tr></thead>
+<tbody><tr><td><i style="background:#6366f1"></i>EveSunMaple</td>
+<td class="n">3.3</td><td class="n">12.0</td><td class="n">19.6</td>
+<td class="n b">34.9</td><td class="n b" style="color:#6366f1">34.9%</td></tr><tr><td><i style="background:#0ea5e9"></i>geyadawang-boop</td>
+<td class="n">15.0</td><td class="n">6.2</td><td class="n">11.8</td>
+<td class="n b">33.0</td><td class="n b" style="color:#0ea5e9">33.0%</td></tr><tr><td><i style="background:#10b981"></i>mikudeshuo</td>
+<td class="n">13.0</td><td class="n">4.8</td><td class="n">5.4</td>
+<td class="n b">23.2</td><td class="n b" style="color:#10b981">23.2%</td></tr><tr><td><i style="background:#f59e0b"></i>zhongmian085182019</td>
+<td class="n">2.9</td><td class="n">1.5</td><td class="n">1.8</td>
+<td class="n b">6.2</td><td class="n b" style="color:#f59e0b">6.2%</td></tr><tr><td><i style="background:#ef4444"></i>yslasd</td>
+<td class="n">0.8</td><td class="n">0.5</td><td class="n">1.4</td>
+<td class="n b">2.7</td><td class="n b" style="color:#ef4444">2.7%</td></tr></tbody></table></section>
+
+<section><h2>三段分解</h2><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="100%" role="img" aria-label="三段分解"><rect x="180.0" y="34" width="45.4" height="24" fill="#93c5fd"/><rect x="225.4" y="34" width="165.0" height="24" fill="#60a5fa"/><rect x="390.4" y="34" width="269.6" height="24" fill="#1d4ed8"/><text x="668.0" y="51" font-size="13" font-weight="700" fill="#1e3a8a">34.9</text><text x="0" y="51" font-size="14" fill="#334155">EveSunMaple</text><rect x="180.0" y="86" width="206.3" height="24" fill="#93c5fd"/><rect x="386.3" y="86" width="85.3" height="24" fill="#60a5fa"/><rect x="471.6" y="86" width="162.3" height="24" fill="#1d4ed8"/><text x="641.9" y="103" font-size="13" font-weight="700" fill="#1e3a8a">33.0</text><text x="0" y="103" font-size="14" fill="#334155">geyadawang-boop</text><rect x="180.0" y="138" width="178.8" height="24" fill="#93c5fd"/><rect x="358.8" y="138" width="66.0" height="24" fill="#60a5fa"/><rect x="424.8" y="138" width="74.3" height="24" fill="#1d4ed8"/><text x="507.1" y="155" font-size="13" font-weight="700" fill="#1e3a8a">23.2</text><text x="0" y="155" font-size="14" fill="#334155">mikudeshuo</text><rect x="180.0" y="190" width="39.9" height="24" fill="#93c5fd"/><rect x="219.9" y="190" width="20.6" height="24" fill="#60a5fa"/><rect x="240.5" y="190" width="24.8" height="24" fill="#1d4ed8"/><text x="273.3" y="207" font-size="13" font-weight="700" fill="#1e3a8a">6.2</text><text x="0" y="207" font-size="14" fill="#334155">zhongmian085182019</text><rect x="180.0" y="242" width="11.0" height="24" fill="#93c5fd"/><rect x="191.0" y="242" width="6.9" height="24" fill="#60a5fa"/><rect x="197.9" y="242" width="19.3" height="24" fill="#1d4ed8"/><text x="225.1" y="259" font-size="13" font-weight="700" fill="#1e3a8a">2.7</text><text x="0" y="259" font-size="14" fill="#334155">yslasd</text><rect x="180" y="285" width="12" height="12" fill="#93c5fd"/><text x="198" y="296" font-size="12" fill="#475569">需求 0.35</text>
+<rect x="280" y="285" width="12" height="12" fill="#60a5fa"/><text x="298" y="296" font-size="12" fill="#475569">契约 0.25</text>
+<rect x="380" y="285" width="12" height="12" fill="#1d4ed8"/><text x="398" y="296" font-size="12" fill="#475569">实现 0.40</text></svg>
+<p class="sub">实现段按 α 在原实现者与重写者之间分配，α 依资产类型取 0.15–0.68；契约按最终交付方归属。</p></section>
+
+<section><h2>口径敏感性</h2>
+<table><thead><tr><th>贡献者</th><th class="n">主口径</th><th class="n">14 项等权</th><th class="n">仅实现</th><th class="n">仅需求+契约</th></tr></thead>
+<tbody><tr><td><i style="background:#6366f1"></i>EveSunMaple</td>
+<td class="n">34.9%</td><td class="n">34.7%</td>
+<td class="n">49.0%</td>
+<td class="n">25.5%</td></tr><tr><td><i style="background:#0ea5e9"></i>geyadawang-boop</td>
+<td class="n">33.0%</td><td class="n">33.2%</td>
+<td class="n">29.5%</td>
+<td class="n">35.3%</td></tr><tr><td><i style="background:#10b981"></i>mikudeshuo</td>
+<td class="n">23.2%</td><td class="n">22.5%</td>
+<td class="n">13.5%</td>
+<td class="n">29.7%</td></tr><tr><td><i style="background:#f59e0b"></i>zhongmian085182019</td>
+<td class="n">6.2%</td><td class="n">6.7%</td>
+<td class="n">4.5%</td>
+<td class="n">7.3%</td></tr><tr><td><i style="background:#ef4444"></i>yslasd</td>
+<td class="n">2.7%</td><td class="n">2.9%</td>
+<td class="n">3.5%</td>
+<td class="n">2.2%</td></tr></tbody></table>
+<p class="sub">仅看实现时 SunMaple 接近一半；仅看设计侧时两位原作者合计约 65%。</p></section>
+
+<section><h2>14 个功能资产</h2>
+<table><thead><tr><th>编号</th><th>功能资产</th><th>类别</th><th class="n">权重</th><th class="n">难度</th><th class="n">α</th><th>证据</th></tr></thead>
+<tbody><tr><td>A0</td><td>课程与智云课堂</td><td>界面</td>
+<td class="n">8</td><td class="n">3</td><td class="n">0.68</td>
+<td class="ev">原项目 meiji 0.1.85 zhiyun/courses</td></tr><tr><td>A1</td><td>学习计划与课表</td><td>界面</td>
+<td class="n">6</td><td class="n">3</td><td class="n">0.68</td>
+<td class="ev">meiji 基线 + PR#11/#13 课表截图导入</td></tr><tr><td>A2</td><td>视频播放与抽帧</td><td>界面</td>
+<td class="n">6</td><td class="n">4</td><td class="n">0.68</td>
+<td class="ev">meiji 播放器 + BiliSum 抽帧；#4 任务证据恢复</td></tr><tr><td>A3</td><td>B站导入与媒体管线</td><td>界面+后端</td>
+<td class="n">8</td><td class="n">5</td><td class="n">0.4</td>
+<td class="ev">BiliSum media_downloads/bilibili；PR#1 扫码会话与摘要导入</td></tr><tr><td>A4</td><td>课件提取与教材 PDF</td><td>界面+后端</td>
+<td class="n">8</td><td class="n">4</td><td class="n">0.45</td>
+<td class="ev">meiji ppt-extract + PDFium；PR#11 多来源批注</td></tr><tr><td>A5</td><td>知识库与论文研究</td><td>界面+后端</td>
+<td class="n">7</td><td class="n">5</td><td class="n">0.25</td>
+<td class="ev">BiliSum kb.py + Zynote backend/research；PR#5/#9/#12/#14</td></tr><tr><td>A6</td><td>对话与 AI 路由</td><td>界面</td>
+<td class="n">8</td><td class="n">4</td><td class="n">0.68</td>
+<td class="ev">meiji chat/model-router；终版基本继承</td></tr><tr><td>A7</td><td>IM 通讯（前端+后端）</td><td>界面+后端</td>
+<td class="n">8</td><td class="n">5</td><td class="n">0.55</td>
+<td class="ev">meiji communications/im + src/main/im（微信/QQ/NapCat）</td></tr><tr><td>A8</td><td>ASR 与字幕校订</td><td>界面+后端</td>
+<td class="n">8</td><td class="n">5</td><td class="n">0.35</td>
+<td class="ev">BiliSum ASR + #17/#18 校订源保真；#40–#43 本地模型</td></tr><tr><td>A9</td><td>摘要流水线</td><td>后端</td>
+<td class="n">7</td><td class="n">4</td><td class="n">0.3</td>
+<td class="ev">BiliSum transcript_jobs/summary → backend summary*</td></tr><tr><td>A10</td><td>视觉与公式识别</td><td>界面+后端</td>
+<td class="n">5</td><td class="n">5</td><td class="n">0.35</td>
+<td class="ev">BiliSum formula-ocr/visual_jobs；#15 LaTeX 渲染</td></tr><tr><td>A11</td><td>任务编排与效率工具</td><td>界面+后端</td>
+<td class="n">6</td><td class="n">3</td><td class="n">0.55</td>
+<td class="ev">meiji tools/datetime + backend jobs；#16 课表约束</td></tr><tr><td>A12</td><td>设置、安全与身份外观</td><td>界面</td>
+<td class="n">6</td><td class="n">4</td><td class="n">0.68</td>
+<td class="ev">meiji settings/identity/appearance + 密钥库；#7/#20</td></tr><tr><td>A13</td><td>协议契约/构建发布/原生助手</td><td>横向</td>
+<td class="n">9</td><td class="n">5</td><td class="n">0.15</td>
+<td class="ev">contract/ + JSON-RPC、三平台 lite CI、native/（ASR/PDF/embed/wechat/youtube）</td></tr></tbody></table></section>
+
+<section><h2>计分口径</h2>
+<ul>
+<li>每个功能资产 = 1 份资产，内部再分 <b>需求 0.35 + 契约 0.25 + 实现 0.40</b>。</li>
+<li>资产权重 = 终版有效代码量 45% + 难度 20% + 采纳度 15% + PR/合并历史 12% + git 工时 8%，归一到 100。</li>
+<li>实现段用继承系数 α：界面类 0.68、后端 0.40、协议/交付 0.15–0.30，其余部分归重写者。</li>
+<li>PR 历史取 18 个已合并 PR 的采纳行数；meiji PR #1 是合并总 PR，已剔除，避免 4.8 万行重复计数。</li>
+<li>这是自定义折算，不是 GitHub 官方统计；分项四舍五入，尾差 ±0.1。</li>
+</ul></section>
+
+<section><h2>局限</h2>
+<ul>
+<li>资产归并与难度评分含人工判断，依据逐条写在证据列，可复核也可反驳。</li>
+<li>git 工时只反映提交跨度，不代表实际投入时长；离线设计与调试无法计入。</li>
+<li>重写导致同一功能存在两套实现，本口径只计一份资产，不重复计分。</li>
+</ul></section>
+
+<div class="foot">Zynote 贡献值重算 · 数据源：meiji 0.1.85 / BiliSum 本地仓库 / EveSunMaple/Zynote 主分支</div>
+</div></body></html>
