@@ -1,8 +1,20 @@
 # Zynote
 
-课堂学习桌面应用：智云课堂字幕、教师重点标注与课后练习。macOS 优先的 Go 后端重写版本，上游基线为 `meiji-listening-guide` 0.1.85（TypeScript/Electron）。
+课堂学习桌面应用：智云课堂字幕、教师重点标注与课后练习。macOS 优先的 Go 后端重写版本。
 
-> 来源：本项目源自 [EveSunMaple/Zynote](https://github.com/EveSunMaple/Zynote)，本仓库为其公开发布副本，遵循上游 AGPL-3.0-only 许可，版权归原作者及贡献者所有。
+## 项目沿革
+
+Zynote 由两个独立项目合并、重构而来：
+
+| 阶段 | 内容 |
+| --- | --- |
+| 起点 A | **BiliSum** —— [@geyadawang-boop](https://github.com/geyadawang-boop) 开发的 B 站视频字幕与内容总结工具 |
+| 起点 B | **meiji-listening-guide** 0.1.85 —— 另一个独立项目，智云课堂字幕与课中标注工具（TypeScript/Electron），见 [mikudeshuo/meiji-listening-guide](https://github.com/mikudeshuo/meiji-listening-guide) |
+| 合并 | 两个项目合并为一体化桌面应用，但合并阶段遗留了构建报错与若干兼容问题 |
+| 重构 | [@EveSunMaple](https://github.com/EveSunMaple) 接手重构：业务核心改为 Go（`backend/`），原生助手改为 Rust（`native/`），形成 Zynote 并在其仓库公开发布 |
+| 后续 | 由 [@geyadawang-boop](https://github.com/geyadawang-boop)、yslasd、zhongmian、mikudeshuo 等通过 PR 持续修复与改进 |
+
+> 本仓库是 Zynote 的独立发布副本，遵循上游 AGPL-3.0-only 许可。版权归各阶段作者及贡献者所有，详见 `NOTICE`。
 
 ## 架构
 
@@ -52,7 +64,10 @@ pnpm build
 
 ## 贡献者
 
-- [@EveSunMaple](https://github.com/EveSunMaple)（SunMaple）：原作者、主要维护者，拥有本仓库写权限
+- [@geyadawang-boop](https://github.com/geyadawang-boop)：BiliSum 作者，本仓库维护者
+- mikudeshuo：meiji-listening-guide 作者
+- [@EveSunMaple](https://github.com/EveSunMaple)（SunMaple）：Zynote 重构与上游维护者，拥有本仓库写权限
+- yslasd、zhongmian：PR 贡献
 
 ## 许可
 
