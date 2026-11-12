@@ -8,7 +8,7 @@ Zynote 由两个独立项目合并、重构而来：
 
 | 阶段 | 内容 |
 | --- | --- |
-| 起点 A | **BiliSum** —— [@geyadawang-boop](https://github.com/geyadawang-boop) 开发的 B 站视频字幕与内容总结工具 |
+| 起点 A | **BiliSum** —— [@geyadawang-boop](https://github.com/geyadawang-boop) 开发的 B 站视频字幕与内容总结工具；功能完整版本未开源 |
 | 起点 B | **meiji-listening-guide** 0.1.85 —— 另一个独立项目，智云课堂字幕与课中标注工具（TypeScript/Electron），见 [mikudeshuo/meiji-listening-guide](https://github.com/mikudeshuo/meiji-listening-guide) |
 | 合并 | 两个项目合并为一体化桌面应用，但合并阶段遗留了构建报错与若干兼容问题 |
 | 重构 | [@EveSunMaple](https://github.com/EveSunMaple) 接手重构：业务核心改为 Go（`backend/`），原生助手改为 Rust（`native/`），形成 Zynote 并在其仓库公开发布 |
