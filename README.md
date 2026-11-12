@@ -2,6 +2,8 @@
 
 课堂学习桌面应用：智云课堂字幕、教师重点标注与课后练习。macOS 优先的 Go 后端重写版本，上游基线为 `meiji-listening-guide` 0.1.85（TypeScript/Electron）。
 
+> 来源：本项目源自 [EveSunMaple/Zynote](https://github.com/EveSunMaple/Zynote)，本仓库为其公开发布副本，遵循上游 AGPL-3.0-only 许可，版权归原作者及贡献者所有。
+
 ## 架构
 
 | 层 | 技术 | 职责 |
