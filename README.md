@@ -50,6 +50,10 @@ pnpm build
 
 见 `docs/RELEASE.md`；Windows IM 迁移见 `docs/WINDOWS_IM_HANDOFF.md`。
 
+## 贡献者
+
+- [@EveSunMaple](https://github.com/EveSunMaple)（SunMaple）：原作者、主要维护者，拥有本仓库写权限
+
 ## 许可
 
 AGPL-3.0-only；第三方归属见 `NOTICE`、`docs/legal/THIRD_PARTY_NOTICES.md`。
