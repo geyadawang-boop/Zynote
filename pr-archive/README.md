@@ -38,8 +38,33 @@
 | [#17](https://github.com/EveSunMaple/Zynote/pull/17) | fix: preserve subtitle source text and withdraw compact correction default | geyadawang-boop | 2026-11-04 | +7,099/-235 | 79 |
 | [#18](https://github.com/EveSunMaple/Zynote/pull/18) | fix(correction): preserve source cues and quarantine unbound compact edits | geyadawang-boop | 2026-11-04 | +840/-64 | 19 |
 
+## 分支索引
+
+每个 PR 的 head 提交已推送为 `pr/N` 分支，可直接对比完整 diff：
+
+| PR | 分支 | 对比链接 |
+| ---: | --- | --- |
+| 1 | `pr/1` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/1 |
+| 2 | `pr/2` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/2 |
+| 3 | `pr/3` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/3 |
+| 4 | `pr/4` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/4 |
+| 5 | `pr/5` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/5 |
+| 6 | `pr/6` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/6 |
+| 7 | `pr/7` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/7 |
+| 8 | `pr/8` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/8 |
+| 9 | `pr/9` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/9 |
+| 10 | `pr/10` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/10 |
+| 11 | `pr/11` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/11 |
+| 12 | `pr/12` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/12 |
+| 13 | `pr/13` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/13 |
+| 14 | `pr/14` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/14 |
+| 15 | `pr/15` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/15 |
+| 16 | `pr/16` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/16 |
+| 17 | `pr/17` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/17 |
+| 18 | `pr/18` | https://github.com/geyadawang-boop/Zynote/compare/main...pr/18 |
+
 ## 说明
 
-1. 归档只记录元数据，不复制 diff（diff 可由 `head_sha` 或 `merge_commit_sha` 在本仓库中检出）。
+1. 归档文件只记录元数据；完整 diff 通过 `pr/N` 分支查看，或用 `head_sha` / `merge_commit_sha` 直接检出。
 2. 作者归属保持原始提交作者，不做任何改写。
 3. 上游 PR 的评论、review 记录不随归档迁移，请通过原始链接查看。
